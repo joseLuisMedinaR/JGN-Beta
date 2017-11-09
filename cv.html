@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Alarmas y Video Vigilancia">
+	<meta name="keyword" content="alarmas, videovigilancia, seguridad, tranquilidad, hogar, empresas">
+  <link rel="shortcut icon" type="image/x-icon" href="images/jgn1.ico">
+	<title>JGN iss</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/formCv.js"></script>
+
+  <script>
+    function contar(){
+      var textoArea = document.forms[0].cartaPresentacion.value;
+      var numeroDeCaracteres = document.forms[0].cartaPresentacion.value.length;
+      
+      var numeroPalabras;
+      var textoAreaDividido;
+      var inicioBlanco = /^ /;
+      var finBlanco = / $/;
+      var variosBlancos = /[ ]+/g;
+      if (numeroDeCaracteres == 0) {
+        numeroPalabras = 0;
+      } else {
+      textoArea = textoArea.replace(inicioBlanco,"");
+      textoArea = textoArea.replace(finBlanco,"");
+      textoArea = textoArea.replace(variosBlancos," ");
+      textoAreaDividido = textoArea.split(" ");
+      numeroPalabras = textoAreaDividido.length;
+  };
+  document.forms[0].caracteres.value = numeroDeCaracteres;
+  document.forms[0].palabras.value = numeroPalabras;
+
+    }
+  </script>
+
+</head>
+<body>
+	    <nav id="menu">
+        <a href="index.html"><img src="images/jgn3(transparente).png" width="110px" height="100px" alt="Principal" title="Principal" id="logo"></a>
+		<ul id="botonera">
+    <li><a href="saberMas.html"  title="Saber Más">Saber Más</a></li>
+        <li class="seleccionado"><a href="cv.html" title="Carga tu CV">Carga tu CV</a></li>
+        <li><a href="contacto.html" title="Contacto">Contacto</a></li>
+    </ul>
+	</nav>
+    <header id="celular">
+    <article id="frase">      
+      <h2>CONTROLA&nbsp;&nbsp;CUANDO&nbsp;&nbsp;Y&nbsp;&nbsp;DONDE&nbsp;&nbsp;QUIERAS</h2>
+            <h2>LO&nbsp;&nbsp;MAS&nbsp;&nbsp;VALIOSO&nbsp;&nbsp;PARA&nbsp;&nbsp;VOS...</h2>
+    </article>
+  </header>
+    <section class="presentacion">
+    <article id="jgn">
+    <h1>Querés formar parte de nuestro equipo ?</h1>
+    <h1>Te invitamos a completar el siguiente Formulario</h1>
+    </article>
+    <picture class="logo">
+    <img src="images/jgn3.png" width="300" height="300" alt="JGN">
+    </picture>
+    </section>
+	<form  class="cv" name="cv" action="" method="post" id="cv" enctype="multipart/form-data" target="_top">
+    <br>
+    <br>
+    <h3>Datos Personales:</h3>
+    <br>
+    <label>Nombre:</label>
+	<input name="nombre" type="text" required id="nombre" placeholder="Ingresa tu Nombre" size="20" maxlength="50">
+    <label>Apellido:</label>
+	<input name="apellido" type="text" required id="apellido" placeholder="Ingresa tu Apellido" size="20" maxlength="50">
+    <br>
+    <div id="nombre_error" class="error"></div>
+    <br>
+    <h3>Fecha de Nacimiento:</h3>
+    <br>
+	<label>Día:</label>
+        <select id="dia" name="dia">
+          <option selected>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>&nbsp;&nbsp;
+    <label>Mes:</label>
+        <select id="mes" name="mes">
+          <option value="1" selected>Enero</option>
+          <option value="2">Febrero</option>
+          <option value="3">Marzo</option>
+          <option value="4">Abril</option>
+          <option value="5">Mayo</option>
+          <option value="6">Junio</option>
+          <option value="7">Julio</option>
+          <option value="8">Agosto</option>
+          <option value="9">Septiembre</option>
+          <option value="10">Octubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Deciembre</option>
+        </select>&nbsp;&nbsp;
+        <label>Año:</label>
+        <input type="number" min="1950" max="1999" placeholder="1950" id="anio" name="anio">
+    <br>
+    <div id="fecha_error" class="error"></div>
+    <br>
+    <h3>Dirección:</h3>
+    <br>
+    <label>Calle:</label>
+  	<input name="calle" id="calle" placeholder="Nombre" size="15" maxlength="50">&nbsp;&nbsp;
+    <label>Número:</label>
+  	<input type="number" name="numeroCalle" id="numeroCalle" placeholder="Número" size="5" maxlength="10">
+    <br>
+    <br>
+    <label>Piso:</label>
+  	<input name="piso" id="piso" placeholder="Piso" size="4" maxlength="3">&nbsp;&nbsp;
+    <label>Departamento:</label>
+  	<input name="departamento" id="departamento" placeholder="Dpto." size="4" maxlength="3">
+  	<br>
+  	<br>
+    <label>Localidad:</label>
+  	<input name="localidad" id="localidad" placeholder="Ingresa tu Localidad" size="30" maxlength="50">
+  	<br>
+  	<br>
+    <label>Provincia:</label>
+  	<input name="provincia" id="provincia" placeholder="Ingresa tu Provincia" size="30" maxlength="50">
+  	<br>
+  	<br>
+    <label>E-Mail:</label>
+    <input name="email" type="email" required id="email" placeholder="Ingresa tu Email" size="30" maxlength="80">
+    <br>
+    <div id="email_error" class="error"></div>
+    <br>
+    <label>Teléfono:</label>
+  	<input name="telefono" type="tel" id="telefono" placeholder="Ingresa tu Telefono" size="30" maxlength="30">
+  	<br>
+  	<br>
+    <h3>Sexo:</h3>
+    <br>
+  	<label>Hombre&nbsp;&nbsp;</label><input type="radio" name="sexo" value="hombre" id="sexo" checked>
+  	<label>&nbsp;&nbsp;&nbsp;&nbsp;Mujer&nbsp;&nbsp;</label><input type="radio" name="sexo" value="mujer" id="sexo">
+    <br>
+    <br>
+    <h3>Estudios Cursados:</h3>
+    <br>
+    <select id="estudio" name="estudio">
+          <option selected>Primario</option>
+          <option>Secundario</option>
+          <option>Terciario</option>
+          <option>Universitario</option>
+    </select>
+    <br>
+    <br>
+    <label>En Curso &nbsp;</label><input type="radio" name="estudioCursado" value="enCurso" checked id="estudioCursado">
+    <label>&nbsp;&nbsp;&nbsp;&nbsp;Finalizado&nbsp;</label><input type="radio" name="estudioCursado" value="finalizado" id="estudioCursado">
+  	<br>
+  	<br>
+    <h3>Puesto de trabajo pretendido:</h3>
+    <br>
+        <input name="puesto_instalador" type="checkbox" value="instalador" id="puestoPretendido"/>
+        <label>Instalador &nbsp;&nbsp;</label>
+        <input name="puesto_venta" type="checkbox" value="venta" id="puestoPretendido"/>
+        <label>Venta al Público &nbsp;&nbsp;</label>
+        <input name="puesto_recepcion" type="checkbox" value="recepcion" id="puestoPretendido"/>
+        <label>Recepción y Atención Telefónica</label>
+  	<br>
+    <div id="puesto_error" class="error"></div>
+  	<br>
+    <label>Foto Peril:</label>&nbsp;&nbsp;
+    <input type="file" name="foto" />
+  	<br>
+  	<br>
+    <h3>Experiencia Laboral:</h3>
+    <br>
+  	<textarea class="mensaje" name="experiencia" maxlength="1000" required placeholder="Contanos tu Experiencia Laboral" id="experiencia"></textarea>
+  	<br>
+    <div id="experiencia_error" class="error"></div>
+  	<br>
+    <h3>Carta de Presentación:</h3>
+    <br>
+  	<textarea class="mensaje" name="cartaPresentacion" maxlength="500" required placeholder="Contanos algo interesante de vos" id="cartaPresentacion" onBlur="contar()" onKeyDown="contar()" onKeyUp="contar()" onKeyPress="contar()" ></textarea>
+  	<br>
+    <div id="carta_error" class="error"></div>
+  	<br>
+    <label>Caracteres:&nbsp;</label>
+    <input type="text" id="caracteres" name="caracteres" size="3" style="text-align: center;">
+    <label>&nbsp;&nbsp;Palabras:&nbsp;</label>
+    <input type="text" id="palabras" size="3" style="text-align: center;">
+    <br>
+    <br>
+    <br>
+    <div class="botonesForm">
+  	<input type="submit" class="boton" value="Enviar" name="enviar" id="enviar"/>
+	<input type="reset" class="boton" value="Limpiar" name="borrar"/>
+  </div>
+	<br>  
+  <div id="contactResponse"></div>
+  <div class="clear"></div>
+	<br>  
+</form>
+	<footer>
+		<h1>Bv. Oroño 690 - Rosario, Santa Fe - (0341) 156-123456</h1>
+        <h1><a href="contacto.html">Contacto</a></h1>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Alarmas y Video Vigilancia">
+	<meta name="keyword" content="alarmas, videovigilancia, seguridad, tranquilidad, hogar, empresas">
+  <link rel="shortcut icon" type="image/x-icon" href="images/jgn1.ico">
+	<title>JGN iss</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/formContacto.js"></script>
+</head>
+<body>
+	    <nav id="menu">
+        <a href="index.html"><img src="images/jgn3(transparente).png" width="110px" height="100px" alt="Principal" title="Principal" id="logo"></a>
+		<ul id="botonera">
+    <li><a href="saberMas.html"  title="Saber Más">Saber Más</a></li>
+        <li><a href="cv.html" title="Carga tu CV">Carga tu CV</a></li>
+        <li class="seleccionado"><a href="contacto.html" title="Contacto">Contacto</a></li>
+    </ul>
+	</nav>
+    <header id="celular">
+    <article id="frase">			
+			<h2>CONTROLA&nbsp;&nbsp;CUANDO&nbsp;&nbsp;Y&nbsp;&nbsp;DONDE&nbsp;&nbsp;QUIERAS</h2>
+            <h2>LO&nbsp;&nbsp;MAS&nbsp;&nbsp;VALIOSO&nbsp;&nbsp;PARA&nbsp;&nbsp;VOS...</h2>
+		</article>
+	</header>
+    <article class="columna" id="infomapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674.166197175367!2d-60.654276182949324!3d-32.94223256938932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab40b459e453%3A0x7d38721d182a5c6d!2sBv.+Oro%C3%B1o+690%2C+Rosario%2C+Santa+Fe!5e0!3m2!1ses!2sar!4v1497035735754" width="600" height="450" allowfullscreen></iframe>
+    <h1>Bv. Oroño 690, Rosario, Santa Fe</h1>
+    <h1>(0341) 156-123456</h1>
+    <h1><a href="mailto:jgn@contactanos.jgn.com" class="mail">jgn@contactanos.jgn.com</a></h1>
+    </article>
+    <article class="formulario">
+    <h1>Completa el Formulario si querés que nos pongamos en contacto con vos</h1>
+    </article>
+	<form class="formularioContacto" name="form" action="" method="post" id="contactForm" enctype="multipart/form-data" target="_top">
+    <h3>Nombre y Apellido:</h3>
+	<input class="nombreApellido" name="nombreApellido" type="text" required id="nombreApellido" placeholder="Ingresa tu Nombre y Apellido" size="30" maxlength="100">
+    <br>
+    <div id="nombreApellido_error" class="error"></div>
+    <br>
+    <h3>Localidad:</h3>
+  	<input name="localidad" id="localidad" placeholder="Ingresa tu Localidad" size="30" maxlength="50">
+  	<br>
+  	<br>
+    <h3>E-Mail:</h3>
+    <input name="email" type="email" required id="email" placeholder="Ingresa tu Email" size="30" maxlength="80">
+    <br>
+    <div id="email_error" class="error"></div>
+    <br>
+    <h3>Teléfono:</h3>
+  	<input name="telefono" type="tel" id="telefono" placeholder="Ingresa tu Telefono" size="30" maxlength="30">
+  	<br>
+  	<br>
+    <h3>Contactarme entre estos horarios:</h3>
+  	<input type="time" name="hora1" id="horaDesde" min="09:00:00" max="18:00:00" placeholder="09:00" required>
+  	<input type="time" name="hora2" id="horaHasta" min="09:00:00" max="18:00:00" placeholder="18:00" required>
+  	<br>
+    <div id="horaDesde_error" class="error"></div>
+  	<br>
+    <h3>Mensaje:</h3>
+  	<textarea class="mensaje" name="mensaje" maxlength="1000" required placeholder="Ingresa tu Mensaje" id="mensaje"></textarea>
+  	<br>
+    <div id="mensaje_error" class="error"></div>
+  	<br>
+    <div class="botonesForm">
+  	<input type="submit" class="boton" value="Enviar" name="enviar" id="enviar"/>
+	<input type="reset" class="boton" value="Limpiar" name="borrar"/>
+  </div>
+	<br>
+  <div id="contactResponse"></div>
+  <div class="clear"></div>
+	<br>
+</form>
+	<footer>
+		<h1>Bv. Oroño 690 - Rosario, Santa Fe - (0341) 156-123456</h1>
+        <h1><a href="contacto.html">Contacto</a></h1>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+@font-face {
+	font-family: Abandon;
+	src:url(../fonts/Abandon.ttf);
+}
+@font-face {
+	font-family: BABIE;
+	src:url(../fonts/BABIE.TTF);
+}
+@font-face {
+	font-family: aflfont;
+	src:url(../fonts/aflfont.ttf);
+}
+@font-face {
+	font-family: AeroMaticsStencilRegular;
+	src:url(../fonts/AeroMaticsStencilRegular.ttf);
+}
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+body {
+	text-align: center;
+	color: white;
+	height: 100%;
+	background: -webkit-linear-gradient(180deg, #333333, #000000);
+  	background: -moz-linear-gradient(180deg, #333333, #000000);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+#menu {
+	display: inline-block;
+	margin: 5px auto;
+	padding-top: 5px;
+}
+#logo {
+	float: left;
+}
+#logo:hover {
+	opacity: 0.5;
+}
+#botonera {
+	float: left;
+	padding-top: 20px;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+#menu li, .boton {
+	display: inline-block;
+	list-style: none;
+	font-family: AeroMaticsStencilRegular;
+	font-size: 28px;
+	border-radius: 30px / 20px;
+    -moz-border-radius: 30px / 20px;
+    -webkit-border-radius: 30px / 20px;
+    box-shadow: #000000 0px 5px 5px;
+    border: solid black 3px;
+	background-color: yellow;
+	text-align: center;
+    padding: 5px 15px 5px 10px;
+    margin: 10px 0 10px 25px;
+}
+.seleccionado a {
+	color: white;
+	text-shadow: 5px 1px 10px #000000;
+}
+#menu .seleccionado {
+	background-color: #818181;
+}
+#botonera li:hover, .boton:hover {
+	background-color: #BCBBBB;
+	box-shadow: inset #000000 0px 5px 5px;
+}
+#celular {
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(180,178,178,0.77) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(180,178,178,0.77) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(180,178,178,0.77) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(180,178,178,0.77) 100%);
+}
+#frase{
+	text-align: center;
+	color: black;
+	padding: 40px 0 40px 0;
+	margin: 15px 0 15px 0;
+	background-image: url(../images/CelularEnMano.png);
+	background-size: auto 90%;
+	background-repeat: no-repeat;
+	text-shadow: 3px 0px 2px #FCFB00;
+}
+h1 {
+	margin: 10px;
+	font-family: AeroMaticsStencilRegular;
+	font-size: 34px;
+}
+h2 {
+	font-family: Abandon;
+}
+h3 {
+	font-family: aflfont;
+	font-size: 24px;
+}
+.presentacion {
+	width: 100%;
+	height: auto;
+	padding-top: 40px;
+}
+#jgn {
+	float: left;
+	width: 400px;
+	height: auto;
+	border-radius: 30px;
+	box-shadow: #000000 5px 5px 3px;
+	margin: 20px 1% 20px 20%;
+}
+.logo {
+	margin: 20px 20% 20px 1%;
+}
+#infomapa {
+	float: left;
+	margin: auto;
+	padding-left: 25%;
+}
+form {
+	float: left;
+}
+.formularioContacto {
+	padding-left: 30%;
+}
+.formulario {
+	float: left;
+	width: 450px;
+	height: auto;
+	border-radius: 30px;
+	box-shadow: #000000 5px 5px 3px;
+	margin: 20px 10px 20px 30%;
+}
+.cv{
+	margin: auto;
+	padding-left: 20%;
+}
+.mensaje {
+	width: 450px;
+	height: 150px;
+	resize:none;	
+}
+.columna img, .columna iframe {
+	border: 3px solid yellow;
+	border-radius: 10px;
+}
+#modelos {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.error{
+	margin: 10px 0px;
+	border-radius: 25px;
+	background-color: yellow;
+	color: black;
+	box-shadow: #000000 3px 3px 1px;
+
+}
+
+footer {
+	clear: both;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-top: 2px solid #999999;
+}
+footer a {
+	color: #eee333;
+	text-shadow: 5px 1px 10px #000000;
+}
+.mail {
+	color: #eee333;
+	text-shadow: 5px 1px 10px #000000;
+}
+form input {
+	height: 30px;
+}
+.boton {
+	color: black;
+	margin: auto 10px auto auto;
+	padding: 5px 10px 35px 10px;
+}
